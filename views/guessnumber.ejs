@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>猜數字-人</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+        body { padding-top:80px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-sm-6 col-sm-offset-3">
+            <form action="" method="post">
+                <div class="form-group">
+                    <label>請輸入一組4位數的數目:</label>
+                    <input type="text" class="form-control" name="inputnum">
+                </div>
+                <button type="submit" class="btn btn-warning btn-lg">送出</button>
+                <a style="float:right" class="btn btn-default btn-sm" href="/answer">看答案</a>
+            <ul><ol>　</ol></ul>
+            <ul style="float:right">
+                <ol>
+                    <button type="button" name="btnNum" class="btn btn-default btn-lg">　1　</button>
+                    <button type="button" name="btnNum" class="btn btn-default btn-lg">　2　</button>
+                    <button type="button" name="btnNum" class="btn btn-default btn-lg">　3　</button>
+                </ol>
+            </ul>
+            <ul style="float:right">
+                <ol>
+                    <button type="button" name="btnNum" class="btn btn-default btn-lg">　4　</button>                
+                    <button type="button" name="btnNum" class="btn btn-default btn-lg">　5　</button>
+                    <button type="button" name="btnNum" class="btn btn-default btn-lg">　6　</button>
+                </ol>
+            </ul>
+            <ul style="float:right">
+                <ol>
+                    <button type="button" name="btnNum" class="btn btn-default btn-lg">　7　</button>                
+                    <button type="button" name="btnNum" class="btn btn-default btn-lg">　8　</button>
+                    <button type="button" name="btnNum" class="btn btn-default btn-lg">　9　</button>
+                </ol>
+            </ul>
+            <ul style="float:right">
+                <ol>
+                    <button type="button" name="btnNum" class="btn btn-default btn-lg">　*　</button>                
+                    <button type="button" name="btnNum" class="btn btn-default btn-lg">　0　</button>
+                    <button type="button" name="btnNum" class="btn btn-default btn-lg">　#　</button>
+                </ol>
+            </ul>                   
+            </form>
+            
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <% if (message.length > 0) { %>
+                <div class="alert alert-danger">                    
+                    <p><%= message %></p>                    
+                </div>
+            <% } %>
+            <hr>
+            <p>
+                <a href="/computerguess">〔電腦〕猜數字　</a>
+                或者 <a href="/">　回首頁</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+

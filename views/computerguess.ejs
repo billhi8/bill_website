@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>猜數字-電腦</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+        body { padding-top:80px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-sm-6 col-sm-offset-3">
+            <form action="" method="post">
+                <div class="form-group">
+                    <label>請輸入一組4位數的題目:</label>
+                    <input type="text" class="form-control" name="inputnum">
+                </div>
+                <button type="submit" class="btn btn-warning btn-lg">電腦開始猜</button>
+            </form>
+            <% if (message.length > 0) { %>
+                <br>
+                <div class="alert alert-danger">                    
+                    <p><%= message %></p>                    
+                </div>
+            <% } %>
+            <hr>
+            <br>
+            <p>
+                <a href="/guessnumber">〔人〕猜數字　</a>
+                或者 <a href="/">　回首頁</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
